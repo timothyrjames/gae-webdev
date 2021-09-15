@@ -5,13 +5,13 @@
 First, you'll need to create a folder for your static files.
 
 ```bash
-mkdir static_files_folder
+mkdir static-files-folder
 ```
 
 Next, we'll go into that folder and start creating some files.
 
 ```bash
-cd static_files_folder
+cd static-files-folder
 ```
 
 ## Creating an index.html Page
@@ -67,7 +67,7 @@ runtime: python39
 
 handlers:
 - url: /static
-  static_dir: static_files_folder
+  static_dir: static-files-folder
 
 - url: /.*
   script: auto
@@ -120,7 +120,7 @@ if __name__ == '__main__':
 ## The Dev App Server
 
 An issue you'll run into at this point is that our main.py file doesn't say anything
-about our static_files_folder. That's completely disconnected from our Python code.
+about our static-files-folder. That's completely disconnected from our Python code.
 
 If you run main.py directly:
 
