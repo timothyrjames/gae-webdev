@@ -116,3 +116,25 @@ if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
 
 ```
+
+## The Dev App Server
+
+An issue you'll run into at this point is that our main.py file doesn't say anything
+about our static_files_folder. That's completely disconnected from our Python code.
+
+If you run main.py directly:
+
+```bash
+python3 main.py
+```
+
+You'll find that you can access your main page, but you can't access your static
+```index.html``` page. To do that, you'll need the development app server. You can 
+run it easily with the dev_appserver.py script:
+
+```bash
+dev_appserver.py app.yaml
+```
+
+Now, you can change the URL to include /static/index.html and you can navigate to
+your plain HTML page.
