@@ -2,7 +2,7 @@ runtime: python39
 
 handlers:
 - url: /s
-  static_dir: static_files_folder
+  static_dir: static-files-folder
 
 - url: /.*
   script: auto
