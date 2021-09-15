@@ -15,10 +15,10 @@ def root():
 ```
 
 This will allow our application to send users directly to our static HTML
-content.
+content, so we don't have to modify our URL in the browser to test this HTML.
 
 You can look at the complete main.py file with this command (make sure your 
-current directory is project2):
+current directory is gae-project):
 
 ```bash
 edit main.py
@@ -29,8 +29,8 @@ to this new page.
 
 ## Running Our Application
 
-Again, make sure your current directory is project2, and you can run the 
-dev_appserver:
+Again, make sure your current directory is gae-project, and you can run the 
+dev_appserver.py:
 
 ```bash
 dev_appserver.py app.yaml
