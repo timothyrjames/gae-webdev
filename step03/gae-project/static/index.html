@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Server Interaction Examples</title>
+    </head>
+    <body>
+        <header>
+            <h1>Server Interaction Examples</h1>
+        </header>
+        <nav>
+            <a href="/">Main Page</a>
+            <a href="/pathpage/something">A Page Using a Path</a>
+            <a href="/pathpage/something+else">Another Page Using a Path</a>
+            <a href="/longpath/path1/path2/path3">A Longer Path Page</a>
+        </nav>
+        <hr>
+        <section>
+            This file will let you test sending some information to the server,
+            and send some information back to the browser too.
+        </section>
+        <section>
+            <header>
+                <h2>Send a GET Request</h2>
+            </header>
+            <form method="get" action="/sendget">
+                <div>
+                    Enter something here: <input type="text" name="inputfield">
+                </div>
+                <div>
+                    Enter a number here: <input type="number" name="numberfield">
+                <div>
+                    <input type="submit" value="Send a GET!">
+                </div>
+            </form>
+        </section>
+        <section>
+            <header>
+                <h2>Send a POST Request</h2>
+            </header>
+            <form method="post" action="/sendpost">
+                <div>
+                    Enter something here:
+                </div>
+                <div>
+                    <textarea name="inputfield"></textarea>
+                <div>
+                    <input type="submit" value="Send a POST!">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
