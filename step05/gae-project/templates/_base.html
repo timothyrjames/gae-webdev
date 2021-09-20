@@ -1,0 +1,40 @@
+<html>
+    <head>
+        {# 
+        
+            This is a comment - it won't show up in the HTML.
+
+            Templates allow us to dynamically generate HTML - this file will be 
+            interpreted and the output will be sent to the browser.  View the page 
+            source in your browser to see what actually comes through.
+            
+            The line below inserts the "page_title" variable into the HTML output.
+            
+        #}
+        <title>{{page_title}}</title>
+    </head>
+    <body>
+        <header>{#
+            
+            We can use if statements inside of templates, too:
+            
+            #}
+            <h1>HTML Samples{% if page_title %}: {{page_title}}{% endif %}</h1>
+        </header>
+        <nav>
+            <a href="links.html">Link Samples</a>
+            <a href="images.html">Image Samples</a>
+            <a href="lists.html">List Samples</a>
+            <a href="sections.html">Section Samples</a>
+            <a href="tables.html">Table Samples</a>
+            <a href="forms.html">Form Samples</a>
+        </nav>
+        <section>{#
+            
+            A "block" can be replaced when we render this template.
+            
+            #}
+            {% block content %}{% endblock %}
+        </section>
+    </body>
+</html>
