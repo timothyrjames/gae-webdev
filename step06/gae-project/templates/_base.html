@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title>{{page_title}}</title>
+    </head>
+    <body>
+        {# 
+
+            Only show the error message area if we've specified one when rendering.
+
+        #}
+        {% if error_message %}<div><strong>{{error_message}}</strong></div>{% endif %}
+        <h1>Template Demo{% if page_title %}: {{page_title}}{% endif %}</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Page 1</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+        </nav>
+        <header>
+            {# 
+                
+                The header and content areas will be replaced in templates that extend
+                this one.
+
+            #}
+            {% block header %}{% endblock %}
+        </header>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+    </body>
+</html>
