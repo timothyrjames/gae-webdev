@@ -117,6 +117,16 @@ if __name__ == '__main__':
 
 ```
 
+## Requirements
+
+We'll also need requirements.txt. We can create this super quickly:
+
+```bash
+echo "Flask==2.0.1" > requirements.txt
+```
+
+That will automatically create a file named requirements.txt with the right contents.
+
 ## The Dev App Server
 
 An issue you'll run into at this point is that our main.py file doesn't say anything

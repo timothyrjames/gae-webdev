@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+td {
+    border-style: dotted;
+    border-width: thin;
+    padding: 2px;
+}
+
+.noborder td {
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px;
+    background: lightcyan;
+}
+
+th {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    color: midnightblue;
+    background-color: lightblue;
+    border-width: 0px 0px thin 0px;
+    border-style: solid;
+}
+
+h2 { 
+    color: darkblue;
+    background-color: none;
+}
+
+article {
+    border-width: 0px medium 0px medium;
+    border-style: dashed;
+    padding: 2em;
+    margin: 2em;
+}
+
+aside {
+    background: pink;
+    margin: 1.5em;
+    padding: 1.25em;
+    float: right;
+}
+
+section {
+    margin-bottom: 1vh;
+}
+
+section div {
+    border: solid;
+    border-width: thin;
+    margin: 0.25em;
+    padding: 0.125em;
+}
+
+.capitalized {
+    text-transform: capitalize;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer {
+    border-top: dotted;
+    border-width: medium;
+    font-style: italic;
+    padding: 1%;
+}
+
+#absolute1 {
+    position: absolute;
+    left: 20px;
+    top: 360px;
+    width: 300px;
+    height: 100px;
+    border: solid;
+    border-color: red;
+    padding: 3px;
+    background-color: #d0e0a0;
+}
+
+#absolute2 {
+    position: absolute;
+    left: 300px;
+    top: 440px;
+    width: 200px;
+    height: 120px;
+    border: solid;
+    border-width: 20px;
+    border-color: green;
+    padding: 2px;
+    background-color: #ffffff;
+}

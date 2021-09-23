@@ -49,7 +49,7 @@ Let's start with our index.html.  You can view it in the editor with this
 command:
 
 ```bash
-edit staticfiles/index.html
+edit static-files-folder/index.html
 ```
 
 Note that HTML is usually made up of "tags" or "elements" - named values, 
@@ -114,7 +114,7 @@ link.
 The source code can be viewed here:
 
 ```bash
-edit staticfiles/links.html
+edit static-files-folder/links.html
 ```
 
 Since we discussed a lot of the file in the last step, we'll focus on new 
@@ -133,7 +133,7 @@ elements here.
         This is a link to another page on this website, but it in a new window.
     </a>
     <br>
-    <a href="/static/lists.html">
+    <a href="/s/lists.html">
         This is an <strong>absolute</strong> link to another page on this website.
     </a>
     <br>
@@ -170,7 +170,7 @@ Try clicking the different links to see how they behave in your browser.
 Next, let's move on to the images example.
 
 ```bash
-edit staticfiles/images.html
+edit static-files-folder/images.html
 ```
 
 Images allow us to display graphical content on our page. We we typically use 
@@ -201,7 +201,7 @@ Moving on to the List Samples, we can see how we can create unordered and
 ordered lists.  You can open the source:
 
 ```bash
-edit staticpages/lists.html
+edit static-files-folder/lists.html
 ```
 
 See the HTML below. 
@@ -242,7 +242,7 @@ these a bit more when we get into CSS.
 
 Try opening the file and viewing the source:
 ```bash
-edit staticpages/sections.html
+edit static-files-folder/sections.html
 ```
 
 The relevant HTML code is below. All of these are structural elements, so their
@@ -285,7 +285,7 @@ ways using CSS.
 Continuing on, we'll look at how to build tables in HTML.
 
 ```bash
-edit staticpages/tables.html
+edit static-files-folder/tables.html
 ```
 
 Tables use a few elements to define the parts of the table.
@@ -362,7 +362,7 @@ The common elements you'll see when building tables are:
 Forms can get a bit more complex; we'll continue to use these throughout the term.
 
 ```bash
-edit staticpages/forms.html
+edit static-files-folder/forms.html
 ```
 
 For forms, it's probably best to take a look at the content in your browser to

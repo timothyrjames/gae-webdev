@@ -71,7 +71,7 @@ def path_page(p1):
     page_content = '<div>The extra part of the path is "%s"</div>' % (p1)
 
     p = MAIN_CONTENT % (page_content)
-    return flask.Response(MAIN_CONTENT % (p), mimetype='text/html')
+    return flask.Response(p, mimetype='text/html')
 
 
 @app.route('/longpath/<p1>/<p2>/<p3>')
@@ -85,7 +85,7 @@ def long_path_page(p1, p2, p3):
         page_content += '<div>Part 3 of the path is "%s"</div>' % (p3)
 
     p = MAIN_CONTENT % (page_content)
-    return flask.Response(MAIN_CONTENT % (p), mimetype='text/html')
+    return flask.Response(p, mimetype='text/html')
 
 
 if __name__ == '__main__':

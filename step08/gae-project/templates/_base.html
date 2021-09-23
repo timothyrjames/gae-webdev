@@ -1,0 +1,28 @@
+<html>
+    <head>
+        {# 
+        
+            Note the inclusion of our stylesheet below.
+
+        #}
+        <link rel="stylesheet" href="/s/style.css">
+        <title>HTML Samples with CSS</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML Samples with CSS</h1>
+        </header>
+        <nav>
+            <a href="/p/links.html">Link Samples</a>
+            <a href="/p/images.html">Image Samples</a>
+            <a href="/p/lists.html">List Samples</a>
+            <a href="/p/sections.html">Section Samples</a>
+            <a href="/p/tables.html">Table Samples</a>
+            <a href="/p/forms.html">Form Samples</a>
+            <a href="/p/absolutes.html">Absolute Positioning</a>
+        </nav>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+    </body>
+</html>
