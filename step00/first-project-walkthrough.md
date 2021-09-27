@@ -86,10 +86,11 @@ gcloud projects create
 ```
 
 If you _have_ created a project, you'll need to set it using the gcloud 
-command - but enter _your_ project ID following the "gcloud config set project" text:
+command - but enter _your_ project ID (instead of YOUR-APPLICATION-ID)
+following the "gcloud config set project" text:
 
 ```bash
-gcloud config set project
+gcloud config set project YOUR-APPLICATION-ID
 ```
 
 
