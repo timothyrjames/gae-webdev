@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<div class="ThingForm">
+    <form method="post" action="/update-thing">
+        <input type="hidden" name="id" value="{{ thing.id }}">
+        <table>
+            <tr>
+                <td>
+                    Text: <input type="text" name="text" value="{{ thing['text'] }}">
+                </td>
+                <td><input type="submit" value="update"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+{% endblock %}

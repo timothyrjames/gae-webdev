@@ -1,0 +1,29 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<table>
+{% for thing in things %}
+    <tr>
+        <td class="ThingText">{{ thing['text'] }}</td>
+        <td class="ThingControls">
+            <a href="/edit-thing?id={{ thing.id }}">edit</a>
+            <a href="/delete-thing?id={{ thing.id }}">delete</a>
+        </td>
+    </tr>
+{% else %}
+<td><td>There are no things.</td></tr>
+{% endfor %}
+</table>
+
+<div class="ThingForm">
+    <h2>Create a New Thing</h2>
+    <form method="post" action="/create-thing">
+        <table>
+            <tr>
+                <td>Text: <input type="text" name="text"></td>
+                <td><input type="submit" value="create"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{% endblock %}
