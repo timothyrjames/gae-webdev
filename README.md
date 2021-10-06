@@ -22,3 +22,7 @@ Each of these folders is a self-contained example application or walkthrough for
 * [step05](https://github.com/timothyrjames/gae-webdev/tree/main/step05) - an example illustrating the use of Flask Templates
 * [step06](https://github.com/timothyrjames/gae-webdev/tree/main/step06) - another example illustrating the use of Flask Templates, with lists and dictionaries
 * [step07](https://github.com/timothyrjames/gae-webdev/tree/main/step07) - an example demonstrating logging in your Google App Engine / Flask application
+* [step08](https://github.com/timothyrjames/gae-webdev/tree/main/step08) - some
+demonstration of CSS
+* [step09](https://github.com/timothyrjames/gae-webdev/tree/main/step09) - a simple
+example illustrating Cloud Datastore
