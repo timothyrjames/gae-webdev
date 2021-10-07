@@ -1,0 +1,55 @@
+.ThingForm {
+    background: lightsteelblue;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+.ThingText {
+    margin: 2%;
+    padding: 1%;
+    background: lightblue;
+    width: 75%;
+    border-radius: 8px;
+}
+
+.ThingControls {
+    background: lightcyan;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+nav a {
+    border-top: thin solid black;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    padding: 0.5%;
+    text-decoration: none;
+}
+
+nav {
+    margin-bottom: 2%;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: blue;
+}
+
+a:hover {
+    color: blue;
+}
+
+table {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}

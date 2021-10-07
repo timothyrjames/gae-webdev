@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/s/style.css">
+        <title>Datastore Example</title>
+    </head>
+    <body>
+        <header>
+            <h1>Datastore Example: Thing Manager</h1>
+        </header>
+        <nav>
+            <a href="/">List of Things</a>
+            <a href="/?sort=forward">Sorted Things</a>
+            <a href="/?sort=reverse">Reversed Things</a>
+        </nav>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+    </body>
+</html>
