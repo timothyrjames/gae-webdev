@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{display.title}}</title>
+        <link rel="stylesheet" href="/s/style.css">
+    </head>
+    <body>
+        <h1>{{display.title}}</h1>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+        <header id="ErrorArea">{% if display.errors %}{% for error in display.errors %}
+            <div class="Error">{{error}}</div>
+            {% endfor %}{% endif %}
+        </header>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+    </body>
+</html>

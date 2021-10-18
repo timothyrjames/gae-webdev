@@ -1,0 +1,5 @@
+Flask
+google-cloud-datastore
+google-cloud-storage
+gunicorn
+google-cloud-core

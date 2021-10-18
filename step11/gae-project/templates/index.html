@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<section>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Select a File:</td>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <tr>
+                <td>Give it a Unique Name:</td>
+                <td><input type="text" name="filename"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Upload!"></td>
+            </tr>
+        </table>
+    </form>
+</section>
+
+{% endblock %}
