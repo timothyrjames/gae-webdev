@@ -1,0 +1,29 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<script>
+    let points = 0;
+
+    function clickThatCow() {
+        points += 100;
+
+        // This retrieves the "div" element with id "Points"
+        let pointsDiv = document.getElementById('Points');
+
+        pointsDiv.innerHTML = 'Points: <em>' + points + '</em>';
+
+        console.log("You now have " + points + " points!");
+    }
+</script>
+
+<h1>WELCOME TO COW CLICKER</h1>
+<div>
+    Click the cow for points.
+</div>
+<div>
+    <img src="/s/cow.jpeg" onclick="clickThatCow();">
+</div>
+<div id="Points"></div>
+
+
+{% endblock %}

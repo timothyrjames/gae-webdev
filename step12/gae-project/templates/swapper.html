@@ -1,0 +1,29 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<div id="content">nothing to see here... yet</div>
+
+<script>
+    function Something(name) {
+        this.name = name;
+        this.toHtml = function() {
+            return "<strong>" + this.name + "</strong>";
+        }
+    }
+
+    let a = new Something("This is A");
+    let b = new Something("This is B");
+
+    function swapToA() {
+        document.getElementById('content').innerHTML = a.toHtml();
+    }
+
+    function swapToB() {
+        document.getElementById('content').innerHTML = b.toHtml();
+    }
+</script>
+
+<button onclick="swapToA();">Set A</button>
+<button onclick="swapToB();">Set B</button>
+
+{% endblock %}
