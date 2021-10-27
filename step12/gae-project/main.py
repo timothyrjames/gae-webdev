@@ -8,12 +8,13 @@ app = flask.Flask(__name__)
 def root():
     return flask.render_template('index.html')
 
+
 @app.route('/<page>')
 def handle_page(page):
     if page.endswith('.html'):
         return flask.render_template(page)
     else:
-        return None
+        return flask.abort(404)
 
 
 if __name__ == '__main__':
