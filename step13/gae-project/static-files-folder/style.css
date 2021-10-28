@@ -1,0 +1,13 @@
+body {
+    font-family: Open Sans, Arial, sans-serif;
+}
+
+div {
+    padding-bottom: 5em;
+}
+
+#maincontent {
+    border: medium solid #0000ff;
+    padding: 1em;
+    margin: 1em;
+}
