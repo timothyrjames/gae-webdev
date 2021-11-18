@@ -1,0 +1,38 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<script src="https://accounts.google.com/gsi/client">
+</script>
+
+<script>
+    function handleGoogleLogin(response) {
+        const responsePayload = decodeJwt(response.credential);
+        console.log("ID: " + responsePayload.sub);
+        console.log('Full Name: ' + responsePayload.name);
+        console.log('Given Name: ' + responsePayload.given_name);
+        console.log('Family Name: ' + responsePayload.family_name);
+        console.log("Image URL: " + responsePayload.picture);
+        console.log("Email: " + responsePayload.email);
+    }
+
+    function decodeJwt(token) {
+        try {
+            let pieces = token.split('.');
+            let payload = pieces[1];
+            let s = atob(payload);
+            return JSON.parse(s);
+        } catch (e) {
+            return null;
+        }
+    }
+</script>
+
+
+<div id="g_id_onload"
+     data-client_id="120355996780-vnhv9kse2s30pkikhnp6nkcfl8rsrm0n.apps.googleusercontent.com"
+     data-context="signin"
+     data-callback="handleGoogleLogin"
+     data-auto_select="true">
+</div>
+
+{% endblock %}
