@@ -1,0 +1,16 @@
+indexes:
+
+- kind: LmsUser
+  properties:
+  - name: username
+  - name: passwordhash
+  
+- kind: LmsCourse
+  properties: 
+  - name: name
+    direction: desc
+
+- kind: LmsLesson
+  ancestor: yes
+  properties:
+  - name: title
