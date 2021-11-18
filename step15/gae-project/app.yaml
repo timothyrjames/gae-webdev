@@ -1,0 +1,8 @@
+runtime: python39
+
+handlers:
+- url: /s
+  static_dir: static-files-folder
+
+- url: /.*
+  script: auto
