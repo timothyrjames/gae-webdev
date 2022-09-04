@@ -46,7 +46,7 @@ nano app.yaml
 
 **app.yaml**:
 ```yaml
-runtime: python39
+runtime: python310
 
 handlers:
 - url: /.*
@@ -59,7 +59,7 @@ handlers:
 You'll want to start by installing Flask.
 
 ```bash
-pip3 install Flask==2.0.1
+pip3 install Flask==2.1.0
 ```
 
 Once you've got Flask installed, you can easily test your first application 
@@ -107,7 +107,7 @@ nano requirements.txt
 In this file, you'll add a single line:
 
 ```txt
-flask==2.0.1
+flask==2.1.0
 ```
 
 In the future, we'll be able to tell pip to install using the same format with
