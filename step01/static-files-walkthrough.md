@@ -63,7 +63,7 @@ The contents of your app.yaml should be the following:
 
 **app.yaml**:
 ```yaml
-runtime: python39
+runtime: python310
 
 handlers:
 - url: /static
@@ -122,7 +122,7 @@ if __name__ == '__main__':
 We'll also need requirements.txt. We can create this super quickly:
 
 ```bash
-echo "Flask==2.0.1" > requirements.txt
+echo "Flask==2.1.0" > requirements.txt
 ```
 
 That will automatically create a file named requirements.txt with the right contents.
