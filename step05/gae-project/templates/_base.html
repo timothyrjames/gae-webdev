@@ -16,7 +16,11 @@
     <body>
         <header>{#
             
-            We can use if statements inside of templates, too:
+            We can use if statements inside of templates, too. Note that the code
+            in between the curly braces is not displayed to the user in the HTML; 
+            this code will show "HTML Samples" as a page heading if no page_title
+            is defined, and if page_title is defined - let's say as "My Title" - 
+            will show "HTML Samples: My Title"
             
             #}
             <h1>HTML Samples{% if page_title %}: {{page_title}}{% endif %}</h1>
@@ -31,7 +35,9 @@
         </nav>
         <section>{#
             
-            A "block" can be replaced when we render this template.
+            A "block" can be replaced when we render this template. When we extend
+            this template, the "content" block in that template will replace what 
+            is below.
             
             #}
             {% block content %}{% endblock %}
