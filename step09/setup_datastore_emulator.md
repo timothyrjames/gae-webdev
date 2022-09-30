@@ -31,7 +31,7 @@ _Note: depending on permissions and configuration, you may need to use apt-get
 for this installation:_
 
 ```bash
-sudo apt-get install google-cloud-sdk-datastore emulator
+sudo apt-get install google-cloud-sdk-datastore-emulator
 ```
 
 Before starting your emulator, you'll need to set your project.  You'll want
